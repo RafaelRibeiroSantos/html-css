@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.cinza{
+    background-color: lightgrey;
+    color: rgb(68, 68, 68);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cinza a{
+    text-decoration: none;
+}
+
+.cinza a:hover{
+    text-decoration: underline;
+    color: rgb(40, 128, 179);
+}
+
+.verde{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(188, 230, 188);
+    color: rgb(71, 112, 71);
+}
+
+.verde a{
+    text-decoration: none;
+}
+
+.verde a:hover{
+    text-decoration: underline;
+    background-color: rgb(200, 230, 190);
+}
+
+.amarela{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(245, 245, 215);
+    color: rgb(182, 141, 80);
+}
+
+.amarela a{
+    text-decoration: none;
+}
+
+.amarela a:hover{
+    text-decoration: underline;
+    background-color: rgb(230, 230, 190);
+}
