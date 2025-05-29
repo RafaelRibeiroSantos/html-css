@@ -70,4 +70,9 @@
     <li>
         <a href="https://rafaelribeirosantos.github.io/html-css/exercicios/ex021">Executar o exercício 21</a>
     </li>
+    <li>
+        <a href="https://rafaelribeirosantos.github.io/html-css/exercicios/ex022">Executar o exercício 22</a>
+    </li><li>
+        <a href="https://rafaelribeirosantos.github.io/html-css/exercicios/ex023">Executar o exercício 23</a>
+    </li>
 </ul>
