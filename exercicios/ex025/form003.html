@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex009/imagens/Social-Media-Icons-Glossy-Social-HTML5.ico" type="image/x-icon">
+    <title>Formulários</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 10px;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required autocomplete="name" placeholder="nome" size="30">
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome" required autocomplete="name" placeholder="sobrenome" size="35">
+        </p>
+        <p>
+            <!--
+                Para input do tipo number, podemos setar o número mínimo com o parâmetro "min" e o número máximo com o parâmetro "max"
+            -->
+            <!--
+                Usamos o step para setar qual o valor minimos que queremos digitar ou seja step="0.5" o valor minimo que podemos digitar entre os número é 0,5
+            -->
+            <!--
+                Para setar o um valor que eu queira o parâmetro usado é value, note que quando esse parâmetro é usado o placeholder some do campo
+            -->
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" value="5" step="0.5" required>
+            <label for="imes">Período Letivo:</label>
+            <input type="month" name="mes" id="imes" value="2025-06">
+        </p>
+        <p>
+            <label for="iprova">Data da Prova:</label>
+            <input type="date" name="prova" id="iprova" value="2025-06-15">
+            <label for="ihora">Horário:</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
