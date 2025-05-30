@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex009/imagens/Social-Media-Icons-Glossy-Social-HTML5.ico" type="image/x-icon">
+    <title>Formulários</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 10px;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formúlario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <!-- 
+                Para o campo ser obrigatório o preenchimento usamos o parâmetro "required", se o campo não for preenchido o navegador avisa.
+            -->
+
+            <!--
+                Para tamanhos de usúarios r senhas usamos o parâmetro "minlength" (tamanho mínimo) ou "maxlength" (tamanho máximo).
+            -->
+
+            <!--
+                Para tamanho dos inputs usamos "size= "x" " o tamnho é em função da quantidade de caracteres, não é quantas letras a caixa de texto vai aceitar e sim quantas letras ficarão visíveis por vez
+            -->
+
+            <!--
+                Para facilitar o preenchimento do campo usamos o "placeholder", vai preencher o campo com o que o usuário deve digitar
+            -->
+
+            <!--
+                O autocomplete tambem é usado nos inputs, porém para indicar a função da caixa, usuário e username
+            -->
+            <label for="iusuario">Usuário:</label>
+            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="15" size="10" placeholder="nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <!--
+                autocomplete para senhas temos 2 new-password para senhas novas quando for cadastro e current-password para senhas de usuário
+            -->
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="8" placeholder="senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
