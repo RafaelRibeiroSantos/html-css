@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex009/imagens/Social-Media-Icons-Glossy-Social-HTML5.ico" type="image/x-icon">
+    <title>Formulários</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 10px;
+            padding-left: 30px;
+        }
+        fieldset{
+            box-shadow: 3px 3px 5px rgba(136, 136, 136, 0.226);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulários</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required minlength="8" maxlength="20">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required placeholder="abcde@gmail.com" autocomplete="email" size="30">
+            </p>
+            <p>
+                <label for="itel">Celular:</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="mobile" placeholder="(12) 91234-5678">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
