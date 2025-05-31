@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex009/imagens/Social-Media-Icons-Glossy-Social-HTML5.ico" type="image/x-icon">
+    <title>Formulários</title>
+
+    <style>
+        label{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on" >
+       <fieldset>
+        <!--
+            No radio como devemos escolher apenas uma opção, declaramos os names com o mesmo valor
+        -->
+
+        <!--
+            Temos que colocar um valor para os arquivos de interatividade
+        -->
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="imasc" value="M"><label for="imasc">Masculino</label>
+        <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label>
+        <input type="radio" name="sexo" id="iiden" value="O"><label for="iiden">Outros</label>
+       </fieldset>
+        <fieldset>
+            <!--
+                Para deixar uma opçãp pré selecionada usamos o parâmetro checked
+            -->
+        <legend>Esporte favoritos</legend>
+        <input type="checkbox" name="esfut" id="iesfut" checked><label for="iesfut">Futebol</label>
+        <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label>
+        <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label>
+        <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label>
+
+       </fieldset> 
+        
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>
