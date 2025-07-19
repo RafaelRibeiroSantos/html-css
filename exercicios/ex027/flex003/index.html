@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../ex026/imagens/icon-pc.png" type="image/x-icon">
+    <title>Flex Box</title>
+    <style>
+
+        .main{
+            background-color: rgb(180, 181, 184);
+            padding: 5px 20px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .main>h2{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            padding: 0px;
+        }
+        .conteiner{
+            background-color: lightgray;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .conteiner1{
+            background-color: lightgray;
+            display: flex;
+            flex-flow: row wrap-reverse;
+        }
+
+        .conteiner2{
+            background-color: lightgray;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        .conteiner3{
+            background-color: lightgray;
+            display: flex;
+            flex-flow: column wrap-reverse;
+        }
+
+        .item{
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+            border-radius: 3px;
+        }
+
+        .item1{
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+            border-radius: 3px;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Flex-flow: row Wrap</h2>
+        <div class="conteiner">
+            <div class="item">Exemplo de blobo A</div>
+            <div class="item">Exemplo de blobo B</div>
+            <div class="item">Exemplo de blobo C</div>
+            <div class="item">Exemplo de blobo D</div>
+            <div class="item">Exemplo de blobo E</div>
+            <div class="item">Exemplo de blobo F</div>
+            <div class="item">Exemplo de blobo G</div>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2>Flex-flow: row wrap-reverse</h2>
+        <div class="conteiner1">
+            <div class="item">Exemplo de blobo A</div>
+            <div class="item">Exemplo de blobo B</div>
+            <div class="item">Exemplo de blobo C</div>
+            <div class="item">Exemplo de blobo D</div>
+            <div class="item">Exemplo de blobo E</div>
+            <div class="item">Exemplo de blobo F</div>
+            <div class="item">Exemplo de blobo G</div>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2>Flex-flow: row wrap (flex:auto)</h2>
+        <div class="conteiner">
+            <div class="item1">Exemplo de blobo A</div>
+            <div class="item1">Exemplo de blobo B</div>
+            <div class="item1">Exemplo de blobo C</div>
+            <div class="item1">Exemplo de blobo D</div>
+            <div class="item1">Exemplo de blobo E</div>
+            <div class="item1">Exemplo de blobo F</div>
+            <div class="item1">Exemplo de blobo G</div>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2>Flex-flow: row wrap-reverse (flex:auto)</h2>
+        <div class="conteiner1">
+            <div class="item1">Exemplo de blobo A</div>
+            <div class="item1">Exemplo de blobo B</div>
+            <div class="item1">Exemplo de blobo C</div>
+            <div class="item1">Exemplo de blobo D</div>
+            <div class="item1">Exemplo de blobo E</div>
+            <div class="item1">Exemplo de blobo F</div>
+            <div class="item1">Exemplo de blobo G</div>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2>Flex-flow: column wrap</h2>
+        <div class="conteiner2">
+            <div class="item">Exemplo de blobo A</div>
+            <div class="item">Exemplo de blobo B</div>
+            <div class="item">Exemplo de blobo C</div>
+            <div class="item">Exemplo de blobo D</div>
+            <div class="item">Exemplo de blobo E</div>
+            <div class="item">Exemplo de blobo F</div>
+            <div class="item">Exemplo de blobo G</div>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2>Flex-flow: column wrap-reverse</h2>
+        <div class="conteiner3">
+            <div class="item">Exemplo de blobo A</div>
+            <div class="item">Exemplo de blobo B</div>
+            <div class="item">Exemplo de blobo C</div>
+            <div class="item">Exemplo de blobo D</div>
+            <div class="item">Exemplo de blobo E</div>
+            <div class="item">Exemplo de blobo F</div>
+            <div class="item">Exemplo de blobo G</div>
+        </div>
+    </div>
+</body>
+</html>
