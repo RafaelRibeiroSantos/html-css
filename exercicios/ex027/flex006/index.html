@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../ex026/imagens/icon-pc.png" type="image/x-icon">
+    <title>Flex Box</title>
+    <style>
+        .main{
+            background-color: lightsteelblue;
+            border: 2px solid black;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .main h2{
+            text-align: center;
+        }
+       .conteiner{
+        background-color: lightsalmon;
+        height: 400px;
+        display: flex;
+        flex-flow: row wrap;
+        /*valor padrão do align-content é stretch*/
+        align-content: stretch;
+       }
+
+       .conteiner1{
+        background-color: lightsalmon;
+        height: 400px;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: flex-start;
+
+       }
+
+       .conteiner2{
+        background-color: lightsalmon;
+        height: 400px;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: flex-end;
+       }
+
+       .conteiner3{
+        background-color: lightsalmon;
+        height: 400px;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+       }
+
+       .conteiner4{
+        background-color: lightsalmon;
+        height: 400px;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+       }
+
+       .conteiner5{
+        background-color: lightsalmon;
+        height: 400px;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-evenly;
+       }
+
+       .conteiner6{
+        background-color: lightsalmon;
+        height: 400px;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-around;
+       }
+
+       .item{
+        background-color: aqua;
+        border: 1px solid black;
+        border-radius: 2px;
+        text-align: center;
+        padding: 40px;
+
+       }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <h2>align-content: stretch</h2>
+            <div class="conteiner">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">E</div>
+                <div class="item">F</div>
+                <div class="item">G</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <h2>align-content: flex-star</h2>
+            <div class="conteiner1">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">E</div>
+                <div class="item">F</div>
+                <div class="item">G</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <h2>align-content: flex-end</h2>
+            <div class="conteiner2">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">E</div>
+                <div class="item">F</div>
+                <div class="item">G</div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="main">
+        <div>
+            <h2>align-content: center</h2>
+            <div class="conteiner3">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">E</div>
+                <div class="item">F</div>
+                <div class="item">G</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <h2>align-content: space-between</h2>
+            <div class="conteiner4">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">E</div>
+                <div class="item">F</div>
+                <div class="item">G</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <h2>align-content: space-evenly</h2>
+            <div class="conteiner5">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">E</div>
+                <div class="item">F</div>
+                <div class="item">G</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <h2>align-content: space-around</h2>
+            <div class="conteiner6">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">E</div>
+                <div class="item">F</div>
+                <div class="item">G</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
